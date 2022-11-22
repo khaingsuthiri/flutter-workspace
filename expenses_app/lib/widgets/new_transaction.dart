@@ -52,9 +52,13 @@ class _NewTransactionState extends State<NewTransaction> {
               //   amountInput = val;
               // },
             ),
-            FlatButton(
-              child: Text('Add Transaction'),
-              textColor: Colors.pink,
+            TextButton(
+              child: Text(
+                'Add Transaction',
+                style: TextStyle(
+                  color: Colors.pink,
+                ),
+              ),
               onPressed: submitData,
             )
           ],
