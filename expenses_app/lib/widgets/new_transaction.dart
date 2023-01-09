@@ -1,23 +1,47 @@
-import 'dart:io';
-
 import 'package:expenses_app/widgets/adaptive_flat_button.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
 class NewTransaction extends StatefulWidget {
   final Function addTx;
 
-  NewTransaction(this.addTx);
+  NewTransaction(this.addTx) {
+    print('Constructor NewTransaction Widget');
+  }
 
   @override
-  State<NewTransaction> createState() => _NewTransactionState();
+  State<NewTransaction> createState() {
+    print('createState NewTransaction Widget');
+    return _NewTransactionState();
+  }
 }
 
 class _NewTransactionState extends State<NewTransaction> {
   final _textController = TextEditingController();
   final _amountController = TextEditingController();
   DateTime _selectedDate;
+
+  _NewTransactionState() {
+    print('Constructor NewTransaction State');
+  }
+
+  @override
+  void initState() {
+    print('initState()');
+    super.initState();
+  }
+
+  @override
+  didUpdateWidget(NewTransaction oldWidget) {
+    print('didUpdateWidget()');
+    return super.didUpdateWidget(oldWidget);
+  }
+
+  @override
+  dispose() {
+    print('dispose()');
+    super.dispose();
+  }
 
   _submitData() {
     final enteredTitle = _textController.text;
