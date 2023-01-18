@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_complete_guide/result.dart';
 
 import './quiz.dart';
-import './result.dart';
 
 // void main() {
 //   runApp(MyApp());
