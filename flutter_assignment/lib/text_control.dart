@@ -9,7 +9,7 @@ class TextControl extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       child: ElevatedButton(
-        style: ElevatedButton.styleFrom(primary: Colors.pink),
+        style: ElevatedButton.styleFrom(backgroundColor: Colors.pink),
         child: Text("Change Text"),
         onPressed: clickHandler,
       ),

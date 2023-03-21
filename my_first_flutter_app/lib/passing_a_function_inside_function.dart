@@ -1,3 +1,3 @@
-String MaterialApp(page()) {
+String MaterialApp(Function() page) {
   return page();
 }
